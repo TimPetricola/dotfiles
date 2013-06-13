@@ -1,0 +1,8 @@
+.DS_Store
+.svn
+*~
+*.swp
+*.rbc
+.powenv
+*.sublime-project
+*.sublime-workspace

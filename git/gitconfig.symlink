@@ -1,0 +1,17 @@
+[user]
+  name = Tim Petricola
+  email = tim.petricola@gmail.com
+
+[github]
+  user = TimPetricola
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
+
+[core]
+	excludesfile = ~/.gitignore
+  editor = subl -n -w 
+
