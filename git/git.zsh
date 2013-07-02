@@ -32,6 +32,8 @@ alias gm='git merge'
 compdef _git gm=git-merge
 alias grh='git reset HEAD'
 alias grhh='git reset HEAD --hard'
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+"
 
 # Will return the current branch name
 # Usage example: git pull origin $(current_branch)
