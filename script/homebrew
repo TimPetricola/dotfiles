@@ -16,4 +16,4 @@ else
 fi
 
 # Install grc and coreutils
-brew install grc coreutils
+brew install grc coreutils postgresql hub
