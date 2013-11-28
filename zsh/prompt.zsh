@@ -28,5 +28,5 @@ git_prompt_info () {
 PROMPT='
 %{%F{blue}%}%n%{$reset_color%}@%m%, %{%F{green}%}%~%{$reset_color%}
 $%{$reset_color%} '
-RPROMPT='%{$reset_color%}$(rvm_prompt_info) $(git_dirty)'
+RPROMPT='%{$reset_color%}$(git_dirty)'
 
