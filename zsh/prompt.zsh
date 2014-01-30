@@ -25,7 +25,11 @@ git_prompt_info () {
  echo "${ref#refs/heads/}"
 }
 
+ruby_prompt_info() {
+  echo "${RUBY_ROOT##*/}"
+}
+
 PROMPT='
 %{%F{blue}%}%n%{$reset_color%}@%m%, %{%F{green}%}%~%{$reset_color%}
 $%{$reset_color%} '
-RPROMPT='%{$reset_color%}$(git_dirty)'
+RPROMPT='%{$reset_color%}$(ruby_prompt_info) $(git_dirty)'
