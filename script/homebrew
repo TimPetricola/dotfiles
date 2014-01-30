@@ -16,4 +16,24 @@ else
 fi
 
 # Install grc and coreutils
-brew install grc coreutils postgresql hub chruby memcached mongodb node openssl redis ruby-install zsh
+brew install grc coreutils openssl chruby ruby-install zsh hub node
+
+# postgresql
+brew install postgresql
+ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+
+# memcached
+brew install memcached
+ln -sfv /usr/local/opt/memcached/*.plist ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist
+
+# mongodb
+brew install mongodb
+ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist
+
+# redis
+brew install redis
+ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
