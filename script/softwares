@@ -1,0 +1,33 @@
+#!/bin/sh
+#### Applications
+
+brew tap phinze/cask
+brew install brew-cask
+
+brew cask install alfred
+brew cask install calibre
+brew cask install clipmenu
+brew cask install disk-inventory-x
+brew cask install evernote
+brew cask install f-lux
+brew cask install github
+brew cask install growlnotify
+brew cask install imageoptim
+brew cask install iterm2
+brew cask install rescuetime
+brew cask install sketch
+brew cask install skype
+brew cask install sparrow
+brew cask install spectacle
+brew cask install spotify
+brew cask install transmission
+brew cask install vlc
+
+# Unstable
+
+brew tap caskroom/versions
+brew cask install google-chrome-canary
+brew cask install sublime-text3
+
+# missing: sleepytime
+# missing: soleol
