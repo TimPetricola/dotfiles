@@ -1,2 +1,1 @@
-export PATH="/usr/local/bin:/usr/local/sbin:$ZSH/bin:/usr/local/heroku/bin:$PATH:$PATH"
-
+export PATH="/usr/local/bin:/usr/local/sbin:$ZSH/bin:/usr/local/heroku/bin:$PATH"

@@ -12,6 +12,5 @@
   ui = true
 
 [core]
-	excludesfile = ~/.gitignore
-  editor = subl -n -w 
-
+  excludesfile = ~/.gitignore
+  editor = subl -n -w

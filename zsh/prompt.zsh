@@ -1,7 +1,7 @@
 autoload colors && colors
 
 # Text to display if the branch is dirty
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}*%{$reset_color%}" 
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}*%{$reset_color%}"
 
 git_dirty() {
   st=$(/usr/bin/git status 2>/dev/null | tail -n 1)
@@ -29,4 +29,3 @@ PROMPT='
 %{%F{blue}%}%n%{$reset_color%}@%m%, %{%F{green}%}%~%{$reset_color%}
 $%{$reset_color%} '
 RPROMPT='%{$reset_color%}$(git_dirty)'
-
