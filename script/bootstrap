@@ -8,5 +8,8 @@ then
   . script/homebrew
 fi
 
+# Configure osx
+. osx/osx
+
 # Run the install (I'd like to pull this out of rake, eventually)
 rake install
