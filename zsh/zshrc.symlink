@@ -25,3 +25,5 @@ source $ZSH/zsh/z.sh
 # source every .zsh file in this rep
 #for config_file ($ZSH/**/*.zsh) source $config_file
 for config_file ($ZSH/**/*.zsh) [[ "$(basename $config_file)" == "completion.zsh" ]] || source $config_file
+
+eval "$(direnv hook zsh)"
