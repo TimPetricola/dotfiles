@@ -1,4 +1,9 @@
-# Aliases
+hub_path=$(which hub)
+if (( $+commands[hub] ))
+then
+  alias git=$hub_path
+fi
+
 alias gst='git status'
 compdef _git gst=git-status
 alias gc='git commit -m'
