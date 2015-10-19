@@ -5,17 +5,11 @@ then
 fi
 
 alias gst='git status'
-compdef _git gst=git-status
 alias gc='git commit -m'
-compdef _git gc=git-commit
 alias gco='git checkout'
-compdef _git gco=git-checkout
 alias gss='git status -s'
-compdef _git gss=git-status
 alias ga='git add'
-compdef _git ga=git-add
 alias gap='git add -p'
-compdef _git gap=git-add
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 # Will return the current branch name
