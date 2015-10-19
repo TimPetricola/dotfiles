@@ -1,6 +1,8 @@
 #!/bin/sh
 #### Applications
 
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
 brew install caskroom/cask/brew-cask
 
 brew cask install alfred

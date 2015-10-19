@@ -10,6 +10,8 @@ if test ! $(which brew)
 then
   echo "  Installing Homebrew."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+else
+  brew update
 fi
 
 # Install grc and coreutils
@@ -34,3 +36,5 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist
 brew install redis
 ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
+
+exit 0
