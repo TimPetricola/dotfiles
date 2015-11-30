@@ -7,6 +7,7 @@ brew install caskroom/cask/brew-cask
 
 brew cask install alfred
 brew cask install calibre
+brew cask install cheatsheet
 brew cask install cleanmymac
 brew cask install clipmenu
 brew cask install disk-inventory-x
