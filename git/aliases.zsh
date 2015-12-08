@@ -11,6 +11,8 @@ alias gss='git status -s'
 alias ga='git add'
 alias gap='git add -p'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+function gri () { git rebase -i HEAD~$1 & }
+alias gpr='git pull-request'
 
 # Will return the current branch name
 function current_branch() {
