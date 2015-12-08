@@ -15,7 +15,7 @@ else
 fi
 
 # Install grc and coreutils
-brew install grc coreutils openssl chruby ruby-install zsh hub node direnv
+brew install grc coreutils openssl chruby ruby-install zsh hub node direnv the_silver_searcher
 
 # postgresql
 brew install postgresql
