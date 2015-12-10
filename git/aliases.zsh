@@ -2,7 +2,7 @@ hub_path=$(which hub)
 if (( $+commands[hub] ))
 then
   alias git=$hub_path
-  alias gpr='hub pull-request'
+  alias gpr='$hub_path pull-request | pbcopy'
 fi
 
 alias gst='git status'
