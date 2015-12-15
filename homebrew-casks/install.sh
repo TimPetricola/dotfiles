@@ -12,7 +12,7 @@ brew cask install cleanmymac
 brew cask install clipmenu
 brew cask install disk-inventory-x
 brew cask install dropbox
-brew cask install f-lux
+brew cask install flux
 brew cask install github-desktop
 brew cask install growlnotify
 brew cask install imageoptim
