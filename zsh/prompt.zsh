@@ -8,28 +8,37 @@ git_dirty() {
   echo -n "%{$reset_color%}"
   if [[ $st == "" ]]
   then
-    echo -n  ""
+    echo -n ""
   else
     echo -n " "
     if [[ $st == "nothing to commit, working directory clean" ]]
     then
-      echo -n  "%{$fg_bold[green]%}$(git_prompt_info)%{$reset_color%}"
+      echo -n  "%{$fg[green]%}$(git_prompt_info)%{$reset_color%}"
     else
-      echo -n  "%{$fg_bold[red]%}$(git_prompt_info)%{$reset_color%}"
+      echo -n  "%{$fg[red]%}$(git_prompt_info)%{$reset_color%}"
     fi
   fi
 }
 
-git_prompt_info () {
+git_prompt_info() {
  ref=$(/usr/bin/git symbolic-ref HEAD 2>/dev/null) || return
- echo "${ref#refs/heads/}"
+ echo -n "${ref#refs/heads/}"
 }
 
 ruby_prompt_info() {
-  echo "${RUBY_ROOT##*/}"
+  echo -n " "
+  echo -n "%{$fg[magenta]%}${RUBY_ROOT##*/}%{$reset_color%}"
+}
+
+path_prompt_info() {
+  echo -n " "
+  echo -n "%{$fg[blue]%}%~%{$reset_color%}"
+}
+
+user_prompt_info() {
+  echo "%n@%m"
 }
 
 PROMPT='
-%{%F{blue}%}%n%{$reset_color%}@%m%, %{%F{green}%}%~%{$reset_color%}
-$%{$reset_color%} '
-RPROMPT='%{$reset_color%}$(ruby_prompt_info)$(git_dirty)'
+$(user_prompt_info)$(path_prompt_info)$(ruby_prompt_info)$(git_dirty)
+$ '
