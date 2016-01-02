@@ -1,0 +1,14 @@
+[storage]
+engine = dropbox
+directory = Apps/Mackup
+
+[applications_to_sync]
+atom
+clipmenu
+flux
+heroku
+sequel-pro
+spectacle
+spotify
+transmission
+vlc
