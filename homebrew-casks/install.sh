@@ -5,6 +5,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 brew install caskroom/cask/brew-cask
 
+brew cask install atom
 brew cask install alfred
 brew cask install calibre
 brew cask install cheatsheet
@@ -25,8 +26,3 @@ brew cask install spectacle
 brew cask install spotify
 brew cask install transmission
 brew cask install vlc
-
-# Unstable
-
-brew tap caskroom/versions
-brew cask install sublime-text3
