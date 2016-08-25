@@ -12,4 +12,3 @@ $ZSH/osx/set-defaults.sh
 # Install homebrew packages
 $ZSH/homebrew/install.sh 2>&1
 $ZSH/homebrew-casks/install.sh 2>&1
-   
