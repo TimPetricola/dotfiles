@@ -30,3 +30,7 @@ function current_branch() {
 alias gpull='git pull origin $(current_branch)'
 alias gpush='git push origin $(current_branch)'
 alias gpnp='git pull origin $(current_branch) && git push origin $(current_branch)'
+
+function git_dig {
+  git log --pretty=format:'%Cred%h%Creset - %Cgreen(%ad)%Creset - %s %C(bold blue)<%an>%Creset' --abbrev-commit --date=short -G"$1" -- $2
+}
