@@ -47,6 +47,36 @@ dir_prompty_info() {
   fi
 }
 
+prompt_set_title() {
+  # tell the terminal we are setting the title
+  print -n '\e]0;'
+  # show hostname if connected through ssh
+  [[ -n $SSH_CONNECTION ]] && print -Pn '(%m) '
+  case $1 in
+    expand-prompt)
+      print -Pn $2;;
+    ignore-escape)
+      print -rn $2;;
+  esac
+  # end set title
+  print -n '\a'
+}
+
+prompt_preexec() {
+  # shows the current dir and executed command in the title while a process is active
+  prompt_set_title 'ignore-escape' "$PWD:t: $2"
+}
+
+prompt_precmd() {
+  # shows the full path in the title
+  prompt_set_title 'expand-prompt' '%~'
+}
+
+autoload -Uz add-zsh-hook
+
+add-zsh-hook precmd prompt_precmd
+add-zsh-hook preexec prompt_preexec
+
 PROMPT='
 $(dir_prompty_info)$(ruby_prompt_info)$(git_dirty)
 $ '

@@ -14,7 +14,14 @@ else
   brew update
 fi
 
-brew install grc coreutils openssl chruby ruby-install zsh hub node direnv the_silver_searcher mackup zsh-syntax-highlighting
+brew install grc coreutils openssl chruby ruby-install zsh hub node direnv
+brew install the_silver_searcher mackup zsh-syntax-highlighting yarn
+brew install chromedriver phraseapp telegraf toxiproxy
+brew install bat diff-so-fancy
+
+# fzf
+brew install fzf
+$(brew --prefix)/opt/fzf/install
 
 # postgresql
 brew install postgresql

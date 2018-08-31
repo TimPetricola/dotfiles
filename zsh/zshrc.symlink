@@ -45,3 +45,5 @@ source $ZSH/zsh/z.sh
 export PATH="$HOME/.yarn/bin:$PATH"
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

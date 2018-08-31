@@ -5,10 +5,8 @@ directory = Apps/Mackup
 [applications_to_sync]
 clipmenu
 flux
-heroku
 sequel-pro
 spectacle
 spotify
-sublime-text-3
 transmission
 vlc
