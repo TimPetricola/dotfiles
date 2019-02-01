@@ -18,7 +18,7 @@ brew install zsh git
 brew install grc coreutils openssl chruby ruby-install hub node direnv
 brew install the_silver_searcher zsh-syntax-highlighting yarn
 brew install chromedriver phraseapp telegraf toxiproxy
-brew install bat diff-so-fancy
+brew install bat diff-so-fancy cloc
 brew install heroku/brew/heroku
 
 # fzf
