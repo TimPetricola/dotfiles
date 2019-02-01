@@ -17,4 +17,4 @@
 
 [core]
   excludesfile = ~/.gitignore
-  editor = subl -n -w
+  editor = code --wait

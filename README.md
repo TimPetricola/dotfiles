@@ -9,7 +9,7 @@ More than inspired by [Zack Holman's dotfiles](https://github.com/holman/dotfile
 
 ```sh
 git clone git@github.com:TimPetricola/dotfiles.git ~/Projects/dotfiles
-cd ~/Projects/  dotfiles
+cd ~/Projects/dotfiles
 script/bootstrap
 ```
 

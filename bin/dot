@@ -7,7 +7,7 @@
 export ZSH=$PROJECTS/dotfiles
 
 # Set OS X defaults
-$ZSH/osx/set-defaults.sh
+$ZSH/macos/set-defaults.sh
 
 # Install homebrew packages
 $ZSH/homebrew/install.sh 2>&1
