@@ -26,6 +26,7 @@ brew cask install github
 brew cask install google-backup-and-sync
 brew cask install cloudapp
 brew cask install cheatsheet
+brew cask install mtmr
 
 brew cask install cleanmymac
 brew cask install flux
