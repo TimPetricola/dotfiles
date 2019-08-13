@@ -14,11 +14,11 @@
   {
     "type": "appleScriptTitledButton",
     "source": {
-      "inline": "if application \"Spotify\" is running then\rtell application \"Spotify\"\rif player state is playing then\rreturn (get artist of current track) & \" – \" & (get name of current track)\relse\rreturn \"\"\rend if\rend tell\rend if\rreturn \"\"\r"
+      "filePath": "/Users/timpetricola/Projects/dotfiles/mtmr/spotify-source.applescript"
     },
     "action": "appleScript",
     "actionAppleScript": {
-      "inline": "if application \"Spotify\" is running then\rtell application \"Spotify\"\rif player state is playing then\rpause\rend if\rend tell\rend if\r"
+      "inline": "/Users/timpetricola/Projects/dotfiles/mtmr/spotify-action.applescript"
     },
     "longAction": "openUrl",
     "longUrl": "spotify://",
@@ -36,11 +36,11 @@
     "align": "right",
     "width": 64
   },
-  { 
+  {
     "type": "displaySleep",
     "title": "🔒",
-    "width": 64, 
-    "align": "right", 
-    "bordered": false 
+    "width": 64,
+    "align": "right",
+    "bordered": false
   }
 ]
