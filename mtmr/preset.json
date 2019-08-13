@@ -1,7 +1,7 @@
 [
   {
     "type": "escape",
-    "width": 64,
+    "width": 72,
     "align": "left"
   },
   {
@@ -18,7 +18,7 @@
     },
     "action": "appleScript",
     "actionAppleScript": {
-      "inline": "/Users/timpetricola/Projects/dotfiles/mtmr/spotify-action.applescript"
+      "filePath": "/Users/timpetricola/Projects/dotfiles/mtmr/spotify-action.applescript"
     },
     "longAction": "openUrl",
     "longUrl": "spotify://",
