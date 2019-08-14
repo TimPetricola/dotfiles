@@ -20,6 +20,7 @@ brew install the_silver_searcher zsh-syntax-highlighting yarn
 brew install chromedriver phraseapp telegraf toxiproxy
 brew install bat diff-so-fancy cloc
 brew install heroku/brew/heroku
+brew install jq
 
 # fzf
 brew install fzf
