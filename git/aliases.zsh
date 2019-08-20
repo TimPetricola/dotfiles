@@ -34,3 +34,12 @@ alias gpnp='git pull origin $(current_branch) && git push origin $(current_branc
 function gdig {
   git log --pretty=format:'%Cred%h%Creset - %Cgreen(%ad)%Creset - %s %C(bold blue)<%an>%Creset' --abbrev-commit --date=short -G"$1" -- $2
 }
+
+function gsw {
+  if [ -n "$1" ]
+  then
+    git switch $1
+  else
+    git switch $(git branch | fzf)
+  fi
+}
