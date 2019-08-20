@@ -21,6 +21,7 @@ brew install chromedriver phraseapp telegraf toxiproxy
 brew install bat diff-so-fancy cloc
 brew install heroku/brew/heroku
 brew install jq
+brew install mongodb
 
 # fzf
 brew install fzf
