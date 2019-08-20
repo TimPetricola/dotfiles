@@ -14,7 +14,7 @@ else
   brew update
 fi
 
-brew install zsh git
+brew install zsh antigen git
 brew install grc coreutils openssl chruby ruby-install hub node direnv
 brew install the_silver_searcher zsh-syntax-highlighting yarn
 brew install chromedriver phraseapp telegraf toxiproxy
