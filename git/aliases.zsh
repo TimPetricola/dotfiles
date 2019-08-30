@@ -40,6 +40,6 @@ function gsw {
   then
     git switch $1
   else
-    git switch $(git branch | fzf)
+    git switch $(git branch --sort=-committerdate | fzf)
   fi
 }
