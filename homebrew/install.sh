@@ -17,11 +17,12 @@ fi
 brew install zsh antigen git
 brew install grc coreutils openssl chruby ruby-install hub node direnv
 brew install the_silver_searcher zsh-syntax-highlighting yarn
-brew install chromedriver phraseapp telegraf toxiproxy
+brew install chromedriver
 brew install bat diff-so-fancy cloc
 brew install heroku/brew/heroku
 brew install jq
 brew install mongodb
+brew install youtube-dl
 
 # fzf
 brew install fzf
@@ -31,11 +32,6 @@ $(brew --prefix)/opt/fzf/install
 brew install postgresql
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
-
-# memcached
-brew install memcached
-ln -sfv /usr/local/opt/memcached/*.plist ~/Library/LaunchAgents
-launchctl load ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist
 
 # mongodb
 brew install mongodb
