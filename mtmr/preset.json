@@ -14,11 +14,11 @@
   {
     "type": "appleScriptTitledButton",
     "source": {
-      "filePath": "/Users/timpetricola/Projects/dotfiles/mtmr/spotify-source.applescript"
+      "filePath": "/Users/tim/Projects/dotfiles/mtmr/spotify-source.applescript"
     },
     "action": "appleScript",
     "actionAppleScript": {
-      "filePath": "/Users/timpetricola/Projects/dotfiles/mtmr/spotify-action.applescript"
+      "filePath": "/Users/tim/Projects/dotfiles/mtmr/spotify-action.applescript"
     },
     "longAction": "openUrl",
     "longUrl": "spotify://",
