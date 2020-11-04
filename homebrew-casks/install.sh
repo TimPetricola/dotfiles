@@ -16,16 +16,12 @@ brew cask install nordvpn
 brew cask install franz
 brew cask install spectacle
 brew cask install sketch
-brew cask install rescuetime
 brew cask install transmission
-brew cask install clipy
 brew cask install disk-inventory-x
 brew cask install calibre
 brew cask install imageoptim
 brew cask install github
 brew cask install google-backup-and-sync
-brew cask install cloudapp
-brew cask install cleanmymac
 brew cask install google-backup-and-sync
 brew cask install charles
 brew cask install insomnia
