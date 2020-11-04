@@ -19,7 +19,7 @@ brew install grc coreutils openssl chruby ruby-install hub node direnv
 brew install the_silver_searcher zsh-syntax-highlighting yarn
 brew install bat diff-so-fancy cloc
 brew install heroku/brew/heroku
-brew install jq
+brew install jq frp
 brew install youtube-dl
 
 # fzf
