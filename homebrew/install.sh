@@ -19,7 +19,7 @@ brew install grc coreutils openssl chruby ruby-install hub node direnv
 brew install the_silver_searcher zsh-syntax-highlighting yarn
 brew install bat diff-so-fancy cloc
 brew install heroku/brew/heroku
-brew install jq frp
+brew install jq frp frpc
 brew install youtube-dl
 
 # fzf
@@ -29,11 +29,6 @@ $(brew --prefix)/opt/fzf/install
 # postgresql
 brew install postgresql
 brew services start postgresql
-
-# mongodb
-brew tap mongodb/brew
-brew install mongodb-community
-brew services start mongodb/brew/mongodb-community
 
 # redis
 brew install redis
