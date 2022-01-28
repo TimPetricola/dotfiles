@@ -1,0 +1,18 @@
+# Starship prompt https://starship.rs/
+
+add_newline = true
+
+[character]
+success_symbol = "[➜](green)"
+
+[aws]
+disabled = true
+
+[git_branch]
+symbol = " "
+
+[python]
+symbol = " "
+
+[ruby]
+symbol = " "

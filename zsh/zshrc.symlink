@@ -47,6 +47,11 @@ unset config_files
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+
+# Starship custom prompt
+export STARSHIP_CONFIG="$ZSH/zsh/starship.toml"
+eval "$(starship init zsh)"
+
 #### FIG ENV VARIABLES ####
 # Please make sure this block is at the end of this file.
 [ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
