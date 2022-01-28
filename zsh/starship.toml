@@ -3,7 +3,8 @@
 add_newline = true
 
 [character]
-success_symbol = "[➜](green)"
+success_symbol = "[➜](white)"
+error_symbol = "[➜](white)"
 
 [aws]
 disabled = true
@@ -16,10 +17,17 @@ style = "bold purple"
 [git_status]
 style = "bold purple"
 
+[package]
+disabled = true
+
 [ruby]
 symbol = 'ruby'
-format = '[$symbol\(($version)\)]($style) '
+format = '[$symbol\[($version)\]]($style) '
 
 [nodejs]
 symbol = 'node'
-format = '[$symbol\(($version)\)]($style) '
+format = '[$symbol\[($version)\]]($style) '
+
+[python]
+symbol = 'python'
+format = '[${symbol}\[${pyenv_prefix}(${version} )(\($virtualenv\) )\]]($style) '
