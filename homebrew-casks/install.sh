@@ -30,3 +30,4 @@ brew cask install tableplus
 brew install --cask fig
 brew install --cask signal
 brew install --cask stremio
+brew install --cask pock
