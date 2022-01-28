@@ -27,3 +27,4 @@ brew cask install threads
 brew cask install webpquicklook
 brew cask install linear
 brew cask install tableplus
+brew install --cask fig
