@@ -50,6 +50,9 @@ unset config_files
 source  /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
 
 # Starship custom prompt
 export STARSHIP_CONFIG="$ZSH/zsh/starship.toml"
