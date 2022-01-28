@@ -28,3 +28,5 @@ brew cask install webpquicklook
 brew cask install linear
 brew cask install tableplus
 brew install --cask fig
+brew install --cask signal
+brew install --cask stremio
