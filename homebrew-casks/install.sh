@@ -31,3 +31,4 @@ brew install --cask fig
 brew install --cask signal
 brew install --cask stremio
 brew install --cask pock
+brew install --cask vanilla
