@@ -18,9 +18,7 @@ brew install zsh antigen git
 brew install grc coreutils openssl chruby ruby-install direnv
 brew install the_silver_searcher zsh-syntax-highlighting
 brew install bat diff-so-fancy cloc
-brew install heroku/brew/heroku
 brew install jq frp frpc
-brew install youtube-dl
 
 # fzf
 brew install fzf

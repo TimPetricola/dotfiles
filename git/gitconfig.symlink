@@ -1,6 +1,6 @@
 [user]
 	name = Tim Petricola
-	email = tim.petricola@gmail.com
+	email = tim.petricola@pm.me
 
 [github]
   user = TimPetricola
@@ -20,6 +20,7 @@
 
 [core]
   excludesfile = ~/.gitignore
-  editor = code --wait
+  editor = cursor --wait
+
 [init]
 	defaultBranch = main

@@ -1,33 +1,48 @@
-# Starship prompt https://starship.rs/
+format = """
+[░▒▓](#769ff0)\
+$directory\
+[](fg:#769ff0 bg:#394260)\
+$git_branch\
+$git_status\
+[](fg:#394260 bg:#212736)\
+$nodejs\
+$python\
+$ruby\
+$nix_shell\
+[](fg:#212736)\
+\n$character"""
 
-add_newline = true
-
-[character]
-success_symbol = "[➜](white)"
-error_symbol = "[➜](white)"
-
-[aws]
-disabled = true
+[directory]
+style = "fg:#e3e5e5 bg:#769ff0"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…"
 
 [git_branch]
-symbol = ""
-format = "[$symbol$branch]($style) "
-style = "bold purple"
+symbol = ""
+style = "bg:#394260"
+format = '[[ $symbol $branch ](fg:#769ff0 bg:#394260)]($style)'
 
 [git_status]
-style = "bold purple"
-
-[package]
-disabled = true
-
-[ruby]
-symbol = 'ruby'
-format = '[$symbol\[($version)\]]($style) '
+style = "bg:#394260"
+format = '[[($all_status$ahead_behind )](fg:#769ff0 bg:#394260)]($style)'
 
 [nodejs]
-symbol = 'node'
-format = '[$symbol\[($version)\]]($style) '
+symbol = ""
+style = "bg:#212736"
+format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
 
 [python]
-symbol = 'python'
-format = '[${symbol}\[${pyenv_prefix}(${version} )(\($virtualenv\) )\]]($style) '
+symbol = ""
+style = "bg:#212736"
+format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+
+[ruby]
+symbol = ""
+style = "bg:#212736"
+format = '[[ $symbol ($version) (\($virtualenv\) )](fg:#769ff0 bg:#212736)]($style)'
+
+[nix_shell]
+symbol = "󱄅"
+style = "bg:#212736"
+format = '[[ $symbol $state:($name) ](fg:#769ff0 bg:#212736)]($style)'
