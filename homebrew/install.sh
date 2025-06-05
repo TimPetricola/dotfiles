@@ -26,10 +26,8 @@ $(brew --prefix)/opt/fzf/install
 
 # postgresql
 brew install postgresql
-brew services start postgresql
 
 # redis
 brew install redis
-brew services start redis
 
 exit 0

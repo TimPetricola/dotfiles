@@ -1,6 +1,6 @@
 [user]
 	name = Tim Petricola
-	email = tim.petricola@pm.me
+	email = tim.petricola@gmail.com
 
 [github]
   user = TimPetricola
@@ -24,3 +24,6 @@
 
 [init]
 	defaultBranch = main
+
+[includeIf "hasconfig:remote.*.url:git@github.com\:/alan-eu**"]
+  path = ~/.gitconfig-alan
